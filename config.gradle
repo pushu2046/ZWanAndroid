@@ -1,0 +1,110 @@
+ext {
+
+    android = [
+            compileSdkVersion       : 29,
+            buildToolsVersion       : "29.0.3",
+            minSdkVersion           : 21,
+            targetSdkVersion        : 29,
+            versionCode             : 1,
+            versionName             : "1.0.0",
+            renderscriptTargetApi   : 21
+    ]
+
+    version = [
+            supportLibraryVersion   : "28.0.0",
+            smartrefreshVersion     : "1.1.0-alpha-25",
+            okhttpVersion           : "3.12.0",
+            retrofitVersion         : "2.3.0",
+            glideVersion            : "4.8.0",
+            daggerVersion           : "2.22.1",
+            butterknifeVersion      : "10.0.0",
+            fragmentationVersion    : "1.3.6",
+    ]
+
+    dependencies = [
+            //base
+            //"appcompat-v7"                      : "com.android.support:appcompat-v7:${version["supportLibraryVersion"]}",
+            //"cardview-v7"                       : "com.android.support:cardview-v7:${version["supportLibraryVersion"]}",
+            //"support-v4"                        : "com.android.support:support-v4:${version["supportLibraryVersion"]}",
+            //"design"                            : "com.android.support:design:${version["supportLibraryVersion"]}",
+            //"recyclerview"                      : "com.android.support:recyclerview-v7:${version["supportLibraryVersion"]}",
+
+            "appcompat"                         : " androidx.appcompat:appcompat:1.1.0",
+            "constraint-layout"                 : "androidx.constraintlayout:constraintlayout:1.1.3",
+
+
+
+            //ui
+            "SmartRefreshLayout"                : "com.scwang.smartrefresh:SmartRefreshLayout:${version["smartrefreshVersion"]}",
+            "SmartRefreshHeader"                : "com.scwang.smartrefresh:SmartRefreshHeader:${version["smartrefreshVersion"]}",
+            "convenientbanner"                  : "com.bigkoo:ConvenientBanner:2.1.4",
+            "flexibleflowlayout"                : "com.mao:flexibleflowlayout:1.0.0",
+            "verticalTabLayout"                 : "q.rorbin:VerticalTabLayout:1.2.9",
+            "agentweb"                          : "com.just.agentweb:agentweb:4.0.3-beta",
+            "immersionbar"                      : 'com.gyf.immersionbar:immersionbar:2.3.3-beta09',
+            "toasty"                            : 'com.github.GrenderG:Toasty:1.3.1',
+
+            //net
+            "gson"                              : "com.google.code.gson:gson:2.8.2",
+            "okhttp"                            : "com.squareup.okhttp3:okhttp:${version["okhttpVersion"]}",
+            "logging-interceptor"               : "com.squareup.okhttp3:logging-interceptor:${version["okhttpVersion"]}",
+            "retrofit"                          : "com.squareup.retrofit2:retrofit:${version["retrofitVersion"]}",
+            "converter-gson"                    : "com.squareup.retrofit2:converter-gson:${version["retrofitVersion"]}",
+            "converter-scalars"                 : "com.squareup.retrofit2:converter-scalars:${version["retrofitVersion"]}",
+            "adapter-rxjava2"                   : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitVersion"]}",
+            "glide"                             : "com.github.bumptech.glide:glide:${version["glideVersion"]}",
+            "glide_compiler"                    : "com.github.bumptech.glide:compiler:${version["glideVersion"]}",
+
+            //dao
+            "greendao"                          : "org.greenrobot:greendao:3.2.2",
+
+            //rx
+            "rxjava"                            : "io.reactivex.rxjava2:rxjava:2.1.7",
+            "rxandroid"                         : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxbinding"                         : "com.jakewharton.rxbinding2:rxbinding:2.1.0",
+            "rxpermissions"                     : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            "rxlifecycle"                       : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2",
+            //di
+            "dagger"                            : "com.google.dagger:dagger:${version["daggerVersion"]}",
+            "dagger-compiler"                   : "com.google.dagger:dagger-compiler:${version["daggerVersion"]}",
+            "dagger-android"                    : "com.google.dagger:dagger-android:${version["daggerVersion"]}",
+            "dagger-android-support"            : "com.google.dagger:dagger-android-support:${version["daggerVersion"]}",
+            "dagger-android-processor"          : "com.google.dagger:dagger-android-processor:${version["daggerVersion"]}",
+            "javax_annotation"                  : "org.glassfish:javax.annotation:10.0-b28",
+            "butterknife"                       : "com.jakewharton:butterknife:${version["butterknifeVersion"]}",
+            "butterknife-compiler"              : "com.jakewharton:butterknife-compiler:${version["butterknifeVersion"]}",
+
+            //multidex
+            "multidex"                          : "com.android.support:multidex:1.0.3",
+
+            //kotlin
+            "kotlin-stdlib"                     : "org.jetbrains.kotlin:kotlin-stdlib:1.2.10",
+
+            //other
+            "lottie"                            : "com.airbnb.android:lottie:2.7.0",
+            "BaseRecyclerViewAdapterHelper"     : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.44",
+            "fragmentation"                     : "me.yokeyword:fragmentation:${version["fragmentationVersion"]}",
+            "fragmentation-swipeback"           : "me.yokeyword:fragmentation-swipeback:${version["fragmentationVersion"]}",
+            "crashreport_upgrade"               : "com.tencent.bugly:crashreport_upgrade:latest.release",
+            "logger"                            : "com.orhanobut:logger:2.1.1",
+            "ByeBurger"                         : "com.github.githubwing:ByeBurger:1.2.3",
+            "stetho"                            : "com.facebook.stetho:stetho:1.5.0",
+            "stetho-okhttp3"                    : "com.facebook.stetho:stetho-okhttp3:1.4.2",
+
+            //ui test
+            "espresso-core"                     : "com.android.support.test.espresso:espresso-core:3.0.2",
+            "espresso-idling-resource"          : "com.android.support.test.espresso:espresso-idling-resource:3.0.2",
+            "espresso-contrib"                  : "com.android.support.test.espresso:espresso-contrib:3.0.2",
+            "espresso-intents"                  : "com.android.support.test.espresso:espresso-intents:3.0.2",
+            "espresso-accessibility"            : "com.android.support.test.espresso:espresso-accessibility:3.0.2",
+            "espresso-web"                      : "com.android.support.test.espresso:espresso-web:3.0.2",
+            "idling-concurrent"                 : "com.android.support.test.espresso.idling:idling-concurrent:3.0.2",
+
+            "jpush"                   : 'cn.jiguang.sdk:jpush:3.1.8',
+            "jcore"                   : 'cn.jiguang.sdk:jcore:1.2.6',
+
+            //WeChatPay
+            "wechat"                  : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+',
+
+    ]
+}
